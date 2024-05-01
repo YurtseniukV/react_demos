@@ -1,6 +1,7 @@
 import React, {FC, useEffect, useState} from 'react';
 import Product, {IProductProps} from "../product/product";
 
+import classes from './Products.module.css'
 const Products: FC = () => {
 
     const [products, setProducts] = useState<IProductProps[]>([]);
@@ -16,7 +17,7 @@ const Products: FC = () => {
 
 
     return (
-        <div>
+        <div className={classes.productsWrappper}>
             {
                 products
                     .map(
@@ -31,6 +32,7 @@ const Products: FC = () => {
                                      stock={value.stock}
                                      rating={value.rating}
                                      category={value.category}
+                                     images={value.images}
                             />))
             }
         </div>
