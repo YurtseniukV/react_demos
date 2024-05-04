@@ -1,5 +1,6 @@
 import axios, {AxiosResponse} from "axios";
 import {IPostModel} from "../Models/IPostModel";
+import {IUserModel} from "../Models/IUserModel";
 
 let axiosInstanse = axios.create({
     baseURL:"https://jsonplaceholder.typicode.com/",
@@ -12,7 +13,7 @@ return axiosInstanse.get('/users')
 }
 
 
-const getAllPostsOfSingleUser = ():Promise<AxiosResponse<IPostModel[]>> =>{
+const getAllPostsOfSingleUser = (id:number):Promise<AxiosResponse<IPostModel[]>> =>{
     return axiosInstanse.get('/posts?userId=' + id)
 }
 
