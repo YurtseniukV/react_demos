@@ -1,10 +1,11 @@
 import React, {FC} from 'react';
 import './App.css';
+import UsersComponent from "./Components/UsersComponent";
 
 const App: FC = () => {
   return (
     <>
-
+<UsersComponent/>
     </>
   );
 }
