@@ -1,6 +1,6 @@
 import axios, {AxiosResponse} from "axios";
-import {IPostModel} from "../Models/IPostModel";
-import {IUserModel} from "../Models/IUserModel";
+import {IPostModel} from "../models/IPostModel";
+import {IUserModel} from "../models/IUserModel";
 
 let axiosInstanse = axios.create({
     baseURL:"https://jsonplaceholder.typicode.com/",

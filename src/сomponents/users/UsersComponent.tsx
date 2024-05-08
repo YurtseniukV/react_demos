@@ -1,8 +1,8 @@
 import React, {FC, useEffect, useState} from 'react';
 
-import {IUserModel} from "../Models/IUserModel";
-import {getAllUsers} from "../Services/Api.services";
-import UserComponent from "./UserComponent";
+import {IUserModel} from "../../models/IUserModel";
+import {getAllUsers} from "../../services/Api.services";
+import UserComponent from "../user/UserComponent";
 
 import classes from "./Users.module.css";
 

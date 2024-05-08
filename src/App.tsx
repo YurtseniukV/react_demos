@@ -1,9 +1,9 @@
 import React, {FC, useState} from 'react';
 import './App.css';
-import UsersComponent from "./Components/UsersComponent";
-import PostsComponent from "./Components/PostsComponent";
-import {getAllPostsOfSingleUser} from "./Services/Api.services";
-import {IPostModel} from "./Models/IPostModel";
+import UsersComponent from "./сomponents/users/UsersComponent";
+import PostsComponent from "./сomponents/posts/PostsComponent";
+import {getAllPostsOfSingleUser} from "./services/Api.services";
+import {IPostModel} from "./models/IPostModel";
 
 const App: FC = () => {
 

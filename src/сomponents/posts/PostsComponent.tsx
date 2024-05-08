@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 
-import {IPostModel} from "../Models/IPostModel";
-import PostComponent from "./PostComponent";
+import {IPostModel} from "../../models/IPostModel";
+import PostComponent from "../post/PostComponent";
 
 import classes from "./posts.module.css";
 
