@@ -1,0 +1,13 @@
+.navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+padding: 5px;
+
+
+ a{
+     margin: 25px;
+     text-decoration: none;
+ }
+}
