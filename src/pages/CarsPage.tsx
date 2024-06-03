@@ -1,10 +1,10 @@
 import React from 'react';
-import FormComponent from "../components/form/FormComponent";
+import CarsComponent from "../components/cars/CarsComponent";
 
 const CarsPage = () => {
     return (
         <div>
-<FormComponent/>
+<CarsComponent/>
         </div>
     );
 };
