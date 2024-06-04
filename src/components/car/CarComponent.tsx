@@ -8,7 +8,7 @@ const CarComponent:FC<IProps> = ({car}) => {
 
     return (
         <div>
-            {car.id}) {car.brand} : {car.price} $ / {car.year}
+            {car.id}) {car.brand} : {car.price} $ / {car.year} year
             </div>
     );
 };

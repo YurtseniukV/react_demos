@@ -1,22 +1,12 @@
-import React, {useEffect, useState} from 'react';
-import {carService} from "../../services/api.services";
+import React, {FC, useEffect, useState} from 'react';
 import {ICarWithAuthModel} from "../../models/ICarWithAuthModel";
 import CarComponent from "../car/CarComponent";
 
 
-
-const CarsComponent = () => {
-
-    const [cars, setCars] = useState<ICarWithAuthModel[]>([])
-
-    useEffect(() => {
-        carService.getAllCars().then((value) =>{
-        if (value) {
-            setCars(value.items);
-        }
-        })
-    }, []);
-
+interface IProps{
+    cars:ICarWithAuthModel[]
+}
+const CarsComponent:FC<IProps> = ({cars}) => {
 
     return (
         <div>
