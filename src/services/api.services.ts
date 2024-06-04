@@ -37,7 +37,7 @@ const authService={
 
     refresh:async(refreshToken:string)=>{
         const response=await axiosInstanse.post<ITokenObtainPair>('/auth/refresh', {refresh:refreshToken});
-        localStorage.setItem('refreshToken',JSON.stringify(response.data))
+        localStorage.setItem('tokenPair',JSON.stringify(response.data))
     }
 }
 

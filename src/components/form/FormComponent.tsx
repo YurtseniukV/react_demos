@@ -21,13 +21,6 @@ let {handleSubmit,register}
 
     return (
         <div>
-            <div>
-                {
-                isAuthState ? <span> ok </span> : <span> not ok</span>
-                }
-            </div>
-
-
             <form onSubmit={handleSubmit(
                 authenticate
             )}>
@@ -35,7 +28,15 @@ let {handleSubmit,register}
                 <input type="text" {...register('password')}/>
                 <button>send</button>
             </form>
+
+            <div>
+                {
+                    isAuthState ? <span>
+You are logged in </span> : <span>
+you aren't logged in</span>
+                }
             </div>
+        </div>
     );
 };
 
