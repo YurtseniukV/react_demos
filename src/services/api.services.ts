@@ -42,7 +42,7 @@ const authService={
 }
 
 const carService={
-    getAllCars:async (page:string)=> {
+    getAllCars:async (page:string):Promise<ICarPaginatedModel|undefined>=> {
         try {
             const response = await axiosInstanse.get<ICarPaginatedModel>('/cars',{params:{page:page}});
                 return response.data;
